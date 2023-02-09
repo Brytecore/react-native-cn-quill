@@ -1,5 +1,5 @@
 {
-  "name": "react-native-cn-quill",
+  "name": "@brytecore/react-native-cn-quill",
   "version": "0.7.17",
   "description": "react-native quill richtext editor",
   "main": "lib/commonjs/index",
@@ -34,15 +34,15 @@
     "quill",
     "editor"
   ],
-  "repository": "https://github.com/imnapo/react-native-cn-quill",
+  "repository": "https://github.com/brytecore/react-native-cn-quill",
   "author": "Narbe HS <imnapo@gmail.com> (https://github.com/imnapo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imnapo/react-native-cn-quill/issues"
+    "url": "https://github.com/brytecore/react-native-cn-quill/issues"
   },
-  "homepage": "https://github.com/imnapo/react-native-cn-quill#readme",
+  "homepage": "https://github.com/brytecore/react-native-cn-quill#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/brytecore"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -55,7 +55,6 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
@@ -77,12 +76,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "commitlint": {
     "extends": [
