@@ -394,7 +394,7 @@ export const quill_snow_css = (cdn: boolean) =>
    .ql-editor.ql-blank::before {
      color: rgba(0,0,0,0.6);
      content: attr(data-placeholder);
-     font-style: italic;
+     //font-style: italic;
      left: 15px;
      pointer-events: none;
      position: absolute;
@@ -853,7 +853,7 @@ export const quill_snow_css = (cdn: boolean) =>
    .ql-toolbar.ql-snow {
      border: 1px solid #ccc;
      box-sizing: border-box;
-     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+     font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
      padding: 8px;
    }
    .ql-toolbar.ql-snow .ql-formats {

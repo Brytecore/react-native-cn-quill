@@ -17,6 +17,7 @@ interface Props {}
 
 export const SelectionBar: React.FC<Props> = ({}) => {
   const { theme, options, hide, selectionName, styles } = useToolbar();
+
   const defaultStyles = useStyles(theme);
   const rootStyle = styles?.selection?.root
     ? styles.selection.root(defaultStyles.selection)
@@ -31,6 +32,7 @@ export const SelectionBar: React.FC<Props> = ({}) => {
   const closeTextStyle = styles?.selection?.close?.text
     ? styles.selection.close.text(defaultStyles.text)
     : defaultStyles.text;
+
   return (
     <View style={rootStyle}>
       <ScrollView

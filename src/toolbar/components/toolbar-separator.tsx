@@ -5,20 +5,11 @@ const defaultColor = '#737373';
 
 interface Props {
   color: string;
+  style: any,
 }
 
-export const ToolbarSeperator: React.FC<Props> = ({ color }) => {
+export const ToolbarSeparator: React.FC<Props> = ({ color, style={} }) => {
   return (
-    <View
-      style={[styles.separator, { backgroundColor: color || defaultColor }]}
-    />
+    <View style={[{ backgroundColor: color || defaultColor }, style]} />
   );
 };
-
-const styles = StyleSheet.create({
-  separator: {
-    width: 1,
-    marginTop: 4,
-    marginBottom: 4,
-  },
-});
